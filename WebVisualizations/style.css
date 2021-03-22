@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .nav{ 
+        background-color: teal;
+        color: darkgrey; 
+    } 
+    .navbar-brand{ 
+        background-color: teal;
+        color: darkgray; 
+    }
+}
