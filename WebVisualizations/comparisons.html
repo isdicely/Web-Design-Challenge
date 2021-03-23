@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualization Dashboard (Latitude)</title>
+    <title>Comparisons</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+   
 </head>
 <body>
     <!-- Using bootstrap for navbar logo "Dashboard" -->
@@ -39,7 +43,53 @@
             </ul>
         </div>
     </nav>
+    <div class="comparison">
+        <h1 style= "color:teal"><strong>Comparison: Latitude vs X</strong></h1>
+        <hr>
+        <h5>Click on any plot to get an in-depth analysis.</h5>
+    
+        <br><br>
+        <div class="panel">
+            <div id="gridcontainer">
+                <div class="row grid-row">
+                    <div class="col-sm-6">
+                        <h3 style="color:teal"><center>vs. Max Temperature</center></h3>
+                        <a href="latitude_vs_max_temperature.html">
+                            <center>
+                                <img src="visualizations/Fig1_Lat_MaxTemp.png" alt="Latitude vs. Max Temperature" style="width:600px;height:400px";>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 style="color:teal"><center>vs. Humidity</center></h3>
+                        <a href="latitude_vs_humidity.html">
+                            <center>
+                                <img src="visualizations/Fig2_Lat_Humidity.png" alt="Latitude vs. Humidity" style="width:600px;height:400px";>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="row grid-row">
+                    <div class="col-sm-6">
+                        <h3 style="color:teal"><center>vs. Cloudiness</center></h3>
+                        <a href="latitude_vs_cloudiness.html">
+                            <center>
+                                <img src="visualizations/Fig3_Lat_Cloudiness.png" alt="Latitude vs. Cloudiness" style="width:600px;height:400px";>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 style="color:teal"><center>vs. Wind Speed</center></h3>
+                        <a href="latitude_vs_wind_speed.html">
+                            <center>
+                            <img src="visualizations/Fig4_Lat_WindSpeed.png" alt="Latitude vs. Wind Speed" style="width:600px;height:400px";>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    help!
 </body>
 </html>
