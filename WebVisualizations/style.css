@@ -66,3 +66,22 @@
     .sidebar a {font-size: 18px;}
 }
 
+#gridcontainer { padding: 20px; }
+
+.grid-row > div { 
+		border: 1px solid white;
+		padding: 10px;
+		background-color: white;
+		margin: 5px 0; 
+}
+.comparison{
+  padding: 50px;
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
