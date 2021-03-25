@@ -1,0 +1,89 @@
+.navbar-expand-md{
+    background-color: teal;
+}
+@media only screen and (max-width: 600px) {
+    .nav{ 
+        background-color: teal;
+        color: darkgrey; 
+    } 
+    .navbar-brand{ 
+        background-color: teal;
+        color: darkgray; 
+    }
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 90%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    left: 0;
+    background-color: teal;
+    overflow-x: scroll;
+    padding-top: 16px;
+  }
+  
+  /* Style sidebar links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+  
+  /* Style links on mouse-over */
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style the main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 10px 100px;
+    text-align: justify;
+  }
+.p_style { 
+    text-align: justify; 
+    font-size: 25px; 
+} 
+.p_sidebar {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    color:white;
+    font-size: x-large;
+}
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+#gridcontainer { padding: 20px; }
+
+.grid-row > div { 
+		border: 1px solid white;
+		padding: 10px;
+		background-color: white;
+		margin: 5px 0; 
+}
+.comparison{
+  padding: 50px;
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.table-responsive{-md}
